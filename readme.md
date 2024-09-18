@@ -26,34 +26,34 @@ To install and run this project locally, follow these steps:
    cd school-management-platform
    ```
 2. Install the necessary PHP dependencies:
-  - composer install
+   ``` composer install ```
 
 3. Configure environment variables:
   - Copy the .env.example file to .env
-    cp .env.example .env
+    ```cp .env.example .env```
   - Set up your database credentials and other environment settings in the .env file.
 
 4. Run database migrations to set up the database structure:
-   php artisan migrate
+   ```php artisan migrate```
 
 5. Seed the database with default user roles and data:
-  - php artisan db:seed
+  ``` php artisan db:seed ```
 6. Start the backend server:
-  - php artisan serve
+   ``` php artisan serve ```
 
 ### Frontend Setup (Vue.js)
 
 1. Install frontend dependencies::
-  npm install
+   ``` npm install ```
 
 2. Compile the frontend assets for development:
-  npm run dev
+   ``` npm run dev ```
 
 3. To watch for changes and automatically compile assets:
-   npm run watch
+   ``` npm run watch ```
 
 4. For production builds:
-   npm run prod
+  ``` npm run prod ```
 
 ### Access the Application
    Once the backend and frontend servers are running, open your browser and navigate to:
