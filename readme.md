@@ -1,8 +1,109 @@
-## **Laravel School Management System** 
+# School Management Platform
 
-**LAVSMS** is developed for educational institutions like schools and colleges built on Laravel 8
+The **School Management Platform** is a comprehensive system designed to meet the administrative needs of educational institutions like schools and colleges. Built with **Laravel 8** on the backend and **Vue.js** on the frontend, this platform provides a seamless and efficient way to manage various school operations such as student data, class management, fees, library resources, and more. It is designed to cater to multiple user roles, each with specific permissions and responsibilities.
 
-**SCREENSHOTS** 
+## Technologies Used
+
+- **Laravel 8**: Backend framework for robust application structure.
+- **Vue.js**: Modern JavaScript framework for building the frontend.
+- **Bootstrap**: Responsive design framework.
+- **Axios**: For making HTTP requests.
+- **Laravel Mix**: Asset compilation and management.
+- **jQuery**: DOM manipulation and event handling.
+- **Popper.js**: For tooltip and popover positioning.
+- **Lodash**: Utility functions for arrays, objects, and more.
+- **Cross-Env**: Platform-agnostic environment settings.
+
+## Installation and Setup
+
+To install and run this project locally, follow these steps:
+
+### Backend Setup (Laravel 8)
+
+1. **Clone the repository** and navigate to the project directory:
+   ```bash
+   git clone <repository-url>
+   cd school-management-platform
+   ```
+2. Install the necessary PHP dependencies:
+  - composer install
+
+3. Configure environment variables:
+  - Copy the .env.example file to .env
+    cp .env.example .env
+  - Set up your database credentials and other environment settings in the .env file.
+
+4. Run database migrations to set up the database structure:
+   php artisan migrate
+
+5. Seed the database with default user roles and data:
+  - php artisan db:seed
+6. Start the backend server:
+  - php artisan serve
+
+### Frontend Setup (Vue.js)
+
+1. Install frontend dependencies::
+  npm install
+
+2. Compile the frontend assets for development:
+  npm run dev
+
+3. To watch for changes and automatically compile assets:
+   npm run watch
+
+4. For production builds:
+   npm run prod
+
+### Access the Application
+   Once the backend and frontend servers are running, open your browser and navigate to:
+   http://localhost:8000
+
+### Project Overview
+
+The **School Management Platform** allows for the efficient management of all aspects of a school or college. It includes features and functionalities for various user roles:
+
+### Super Admin & Admin
+
+- Manage user accounts for all roles (Super Admin, Admin, Teachers, Students, Parents, Librarians, and Accountants).
+- Manage classes, sections, subjects, and exams.
+- Oversee payments, fees, and the noticeboard.
+- Configure system settings and delete any record.
+
+### Teacher
+
+- Manage class sections, subjects, and exam records.
+- Upload study materials and manage student marks.
+- View and manage timetables.
+
+### Student
+
+- View class subjects, marks, and timetables.
+- Access study materials uploaded by teachers.
+- View payment history and school events.
+
+### Parent
+
+- View child's marksheet, timetable, and payment records.
+- Monitor child’s academic progress and school activities.
+- Manage own profile information.
+
+### Accountant
+
+- Handle payments and fee management.
+- Print payment receipts.
+
+### Librarian
+
+- Manage library resources such as books and their status.
+
+## Additional Features
+
+- **Responsive Design**: Built with Bootstrap for full compatibility with all devices.
+- **Security**: Implemented role-based access control and secured data management.
+- **Customizable**: Extend or modify features easily to suit your institution's needs.
+
+### SCREENSHOTS 
 
 **Dashboard**
 <img src="https://i.ibb.co/D4T0z6T/dashboard.png" alt="dashboard" border="0">
@@ -25,99 +126,6 @@
 
 <hr />  
 
-There are 7 types of user accounts. They include:
- 
-Administrators (Super Admin & Admin)
-- Librarian
-- Accountant
-- Teacher
-- Student
-- Parent
-
-**Requirements** 
-
-Check Laravel 8 Requirements https://laravel.com/docs/8.x
-
-**Installation**
-- Install dependencies (composer install)
-- Set Database Credentials & App Settings in dotenv file (.env)
-- Migrate Database (php artisan migrate)
-- Database seed (php artisan db:seed)
-
-**Login Credentials**
-After seeding. Login details as follows:
-
-| Account Type  | Username | Email | Password |
-| ------------- | -------- | ----- | -------- |
-| Super Admin | cj | cj@cj.com | cj |
-|  Admin | admin | admin@admin.com | cj |
-|  Teacher | teacher | teacher@teacher.com | cj |
-|  Parent | parent | parent@parent.com | cj |
-|  Accountant | accountant | accountant@accountant.com | cj |
-|  Student | student | student@student.com | cj |
-
-#### **FUNCTIONS OF ACCOUNTS** 
-
-**-- SUPER ADMIN**
-- Only Super Admin can delete any record
-- Create any user account
- 
-**-- Administrators (Super Admin & Admin)**
-
-- Manage students class/sections
-- View marksheet of students
-- Create, Edit and manage all user accounts & profiles
-- Create, Edit and manage Exams & Grades
-- Create, Edit and manage Subjects
-- Manage noticeboard of school
-- Notices are visible in calendar in dashboard
-- Edit system settings
-- Manage Payments & fees
-
-**-- ACCOUNTANT**
-- Manage Payments & fees
-- Print Payment Receipts
-
-**-- LIBRARIAN**
-- Manage Books in the Library
-
-**-- TEACHER**
-- Manage Own Class/Section
-- Manage Exam Records for own Subjects
-- Manage Timetable if Assigned as Class Teacher
-- Manage own profile
-- Upload Study Materials
-
-**-- STUDENT**
-- View teacher profile
-- View own class subjects
-- View own marks and class timetable
-- View Payments
-- View library and book status
-- View noticeboard and school events in calendar
-- Manage own profile
-
-**-- PARENT**
-- View teacher profile
-- View own child's marksheet (Download/Print PDF)
-- View own child's Timetable
-- View own child's payments
-- View noticeboard and school events in calendar
-- Manage own profile
-
-### **Contributing**
-
-Your Contributions & suggestions are welcomed. Please use Pull Request
-
-### **Security Vulnerabilities**
-
-If you discover a security vulnerability within LAV_SMS, please send an e-mail to CJ Inspired via cjay.pub@gmail.com. All security vulnerabilities will be promptly addressed.
-
-***Please Note*** that some sections of this project are in the work-in-progress stage and would be updated soon. These include:
-
-- The Noticeboard/Calendar in the Dashboard Area
-- Librarian/Acountant user pages
-- Library Resources/Study Materials Upload for Students
-
-### **Contact [CJ INSPIRED]**
-- Phone : +2347068149559
+## License
+This project is licensed under the **MIT License**.
+**Developed by Marcus Wilkes**
